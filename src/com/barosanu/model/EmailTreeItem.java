@@ -1,6 +1,5 @@
 package com.barosanu.model;
 
-import com.barosanu.EmailManager;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TreeItem;
@@ -23,18 +22,16 @@ public class EmailTreeItem<String> extends TreeItem<String> {
     }
 
     public ObservableList<EmailMessage> getEmailMessages(){
-        return emailMessages;
+        return  emailMessages;
     }
 
     public void addEmail(Message message) throws MessagingException {
         EmailMessage emailMessage = fetchMessage(message);
         emailMessages.add(emailMessage);
     }
-
     public void addEmailToTop(Message message) throws MessagingException {
         EmailMessage emailMessage = fetchMessage(message);
         emailMessages.add(0, emailMessage);
-
     }
 
     private EmailMessage fetchMessage(Message message) throws MessagingException {
@@ -48,11 +45,10 @@ public class EmailTreeItem<String> extends TreeItem<String> {
                 messageIsRead,
                 message
         );
-
         if(!messageIsRead){
             incrementMessagesCount();
         }
-        return emailMessage;
+        return  emailMessage;
     }
 
     public void incrementMessagesCount(){
@@ -66,11 +62,12 @@ public class EmailTreeItem<String> extends TreeItem<String> {
     }
 
     private void updateName(){
-        if(unreadMessagesCount >0){
-            this.setValue((String) (name +"("+ unreadMessagesCount +")"));
-        }else{
+        if(unreadMessagesCount > 0){
+            this.setValue((String)(name + "(" + unreadMessagesCount + ")"));
+        } else {
             this.setValue(name);
         }
     }
+
 
 }

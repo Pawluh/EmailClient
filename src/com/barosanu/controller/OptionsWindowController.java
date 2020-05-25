@@ -17,8 +17,8 @@ import java.util.ResourceBundle;
 
 public class OptionsWindowController extends BaseController implements Initializable {
 
-    public OptionsWindowController(EmailManager emailmanager, ViewFactory viewFactory, String fxmlName) {
-        super(emailmanager, viewFactory, fxmlName);
+    public OptionsWindowController(EmailManager emailManager, ViewFactory viewFactory, String fxmlName) {
+        super(emailManager, viewFactory, fxmlName);
     }
 
     @FXML
@@ -28,9 +28,9 @@ public class OptionsWindowController extends BaseController implements Initializ
     private ChoiceBox<ColorTheme> themePicker;
 
     @FXML
-    void applyButtonAction() {
+    void applyBtnAction() {
         viewFactory.setColorTheme(themePicker.getValue());
-        viewFactory.setFontSize(FontSize.values()[(int) (fontSizePicker.getValue())]);
+        viewFactory.setFontSize(FontSize.values()[(int)(fontSizePicker.getValue())]);
         viewFactory.updateStyles();
     }
 
@@ -41,19 +41,19 @@ public class OptionsWindowController extends BaseController implements Initializ
     }
 
     @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
+    public void initialize(URL location, ResourceBundle resources) {
         setUpThemePicker();
         setUpSizePicker();
     }
 
     private void setUpSizePicker() {
         fontSizePicker.setMin(0);
-        fontSizePicker.setMax(FontSize.values().length-1);
-        fontSizePicker.setValue(viewFactory.getFontSize().ordinal()); //ordinal daje wartosc/ordinal enuma
+        fontSizePicker.setMax(FontSize.values().length - 1);
+        fontSizePicker.setValue(viewFactory.getFontSize().ordinal());
         fontSizePicker.setMajorTickUnit(1);
         fontSizePicker.setMinorTickCount(0);
         fontSizePicker.setBlockIncrement(1);
-        fontSizePicker.setSnapToPixel(true);
+        fontSizePicker.setSnapToTicks(true);
         fontSizePicker.setShowTickMarks(true);
         fontSizePicker.setShowTickLabels(true);
         fontSizePicker.setLabelFormatter(new StringConverter<Double>() {
@@ -64,11 +64,11 @@ public class OptionsWindowController extends BaseController implements Initializ
             }
 
             @Override
-            public Double fromString(String s) {
+            public Double fromString(String string) {
                 return null;
             }
         });
-        fontSizePicker.valueProperty().addListener((obs, oldVal, newVal) ->{
+        fontSizePicker.valueProperty().addListener((obs, oldVal, newVal) -> {
             fontSizePicker.setValue(newVal.intValue());
         });
     }

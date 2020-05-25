@@ -10,12 +10,11 @@ import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.Multipart;
 import java.io.IOException;
-import java.security.Provider;
 
 public class MessageRendererService extends Service {
 
     private EmailMessage emailMessage;
-    private WebEngine webEngine; //render messages
+    private WebEngine webEngine;
     private StringBuffer stringBuffer;
 
     public MessageRendererService(WebEngine webEngine) {
@@ -39,9 +38,9 @@ public class MessageRendererService extends Service {
         return new Task() {
             @Override
             protected Object call() throws Exception {
-                try{
+                try {
                     loadMessage();
-                }catch (Exception e){
+                } catch (Exception e){
                     e.printStackTrace();
                 }
                 return null;
@@ -50,14 +49,14 @@ public class MessageRendererService extends Service {
     }
 
     private void loadMessage() throws MessagingException, IOException {
-        stringBuffer.setLength(0); //clear stringBuffer
+        stringBuffer.setLength(0); //clears the SB
         Message message = emailMessage.getMessage();
         String contentType = message.getContentType();
         if(isSimpleType(contentType)){
             stringBuffer.append(message.getContent().toString());
-        }else if(isMultiPartType(contentType)){
+        } else if(isMultipartType(contentType)){
             Multipart multipart = (Multipart) message.getContent();
-            for(int i = multipart.getCount() -1; i>= 0; i--){
+            for (int i = multipart.getCount() - 1; i>=0; i--){
                 BodyPart bodyPart = multipart.getBodyPart(i);
                 String bodyPartContentType = bodyPart.getContentType();
                 if(isSimpleType(bodyPartContentType)){
@@ -66,18 +65,21 @@ public class MessageRendererService extends Service {
             }
         }
     }
-    private Boolean isSimpleType(String contentType){
-        if(contentType.contains("TEXT/HTML") || (contentType.contains("mixed")) || (contentType.contains("text"))){
+
+    private boolean isSimpleType(String contentType){
+        if(contentType.contains("TEXT/HTML") ||
+        contentType.contains("mixed")||
+        contentType.contains("text")){
             return true;
-        }else{
+        } else {
             return false;
         }
     }
 
-    private boolean isMultiPartType(String contentType){
+    private boolean isMultipartType(String contentType){
         if(contentType.contains("multipart")){
             return true;
-        }else{
+        } else {
             return false;
         }
     }

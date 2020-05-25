@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="activation1">
+    <CLASSES>
+      <root url="jar://C:/Program Files/Java/javafx-sdk-11.0.2/javaMail/activation.jar!/" />
+      <root url="jar://C:/Program Files/Java/javafx-sdk-11.0.2/javaMail/javax.mail.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

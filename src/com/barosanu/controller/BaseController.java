@@ -5,17 +5,17 @@ import com.barosanu.view.ViewFactory;
 
 public abstract class BaseController {
 
-    protected EmailManager emailmanager;
+    protected EmailManager emailManager;
     protected ViewFactory viewFactory;
     private String fxmlName;
 
-    public BaseController(EmailManager emailmanager, ViewFactory viewFactory, String fxmlName) {
-        this.emailmanager = emailmanager;
+    public BaseController(EmailManager emailManager, ViewFactory viewFactory, String fxmlName) {
+        this.emailManager = emailManager;
         this.viewFactory = viewFactory;
         this.fxmlName = fxmlName;
     }
 
-    public String getFxmlName(){
+    public String getFxmlName() {
         return fxmlName;
     }
 }

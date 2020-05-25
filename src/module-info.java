@@ -1,4 +1,4 @@
-module JavaFxEmailClient {
+module JavaFxEmailClientCourse {
     requires javafx.fxml;
     requires javafx.controls;
     requires javafx.graphics;
@@ -10,4 +10,5 @@ module JavaFxEmailClient {
     opens com.barosanu.view;
     opens com.barosanu.controller;
     opens com.barosanu.model;
+
 }
