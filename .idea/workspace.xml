@@ -11,8 +11,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
-        <option value="FxmlFile" />
         <option value="Enum" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -83,25 +83,25 @@
     </state>
     <state x="-1030" y="129" key="FileChooserDialogImpl/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588425742872" />
     <state x="389" y="104" key="FileChooserDialogImpl/0.0.1366.728/-1440.0.1440.900@0.0.1366.728" timestamp="1587661680163" />
-    <state width="1227" height="125" key="GridCell.Tab.0.bottom" timestamp="1588504317416">
+    <state width="1227" height="125" key="GridCell.Tab.0.bottom" timestamp="1588690284731">
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
-    <state width="1227" height="125" key="GridCell.Tab.0.bottom/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588504317416" />
+    <state width="1227" height="125" key="GridCell.Tab.0.bottom/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588690284731" />
     <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728/-1440.0.1440.900@0.0.1366.728" timestamp="1587661778321" />
-    <state width="1227" height="125" key="GridCell.Tab.0.center" timestamp="1588504317416">
+    <state width="1227" height="125" key="GridCell.Tab.0.center" timestamp="1588690284731">
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
-    <state width="1227" height="125" key="GridCell.Tab.0.center/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588504317416" />
+    <state width="1227" height="125" key="GridCell.Tab.0.center/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588690284731" />
     <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728/-1440.0.1440.900@0.0.1366.728" timestamp="1587661778321" />
-    <state width="1227" height="125" key="GridCell.Tab.0.left" timestamp="1588504317416">
+    <state width="1227" height="125" key="GridCell.Tab.0.left" timestamp="1588690284730">
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
-    <state width="1227" height="125" key="GridCell.Tab.0.left/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588504317416" />
+    <state width="1227" height="125" key="GridCell.Tab.0.left/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588690284730" />
     <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728/-1440.0.1440.900@0.0.1366.728" timestamp="1587661778321" />
-    <state width="1227" height="125" key="GridCell.Tab.0.right" timestamp="1588504317416">
+    <state width="1227" height="125" key="GridCell.Tab.0.right" timestamp="1588690284731">
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
-    <state width="1227" height="125" key="GridCell.Tab.0.right/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588504317416" />
+    <state width="1227" height="125" key="GridCell.Tab.0.right/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588690284731" />
     <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728/-1440.0.1440.900@0.0.1366.728" timestamp="1587661778321" />
     <state width="1396" height="286" key="GridCell.Tab.1.bottom" timestamp="1588431043593">
       <screen x="-1440" y="0" width="1440" height="900" />
@@ -140,10 +140,10 @@
     </state>
     <state x="-1268" y="0" key="SettingsEditor/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588425753034" />
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728/-1440.0.1440.900@0.0.1366.728" timestamp="1587660167222" />
-    <state x="-1042" y="230" key="com.intellij.ide.util.TipDialog" timestamp="1588498925444">
+    <state x="-1042" y="230" key="com.intellij.ide.util.TipDialog" timestamp="1588689248273">
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
-    <state x="-1042" y="230" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588498925444" />
+    <state x="-1042" y="230" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588689248273" />
     <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1440.0.1440.900@0.0.1366.728" timestamp="1588002121454" />
     <state x="-986" y="146" key="extract.method.dialog" timestamp="1588502845980">
       <screen x="-1440" y="0" width="1440" height="900" />
