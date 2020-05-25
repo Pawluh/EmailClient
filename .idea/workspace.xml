@@ -7,6 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1bUp5PKHVfmIIW7AqYqzdtRtkcL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -15,10 +22,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="C:/Program Files/Java/javafx-sdk-11.0.2/lib/javafx.web.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/barosanu/view/icons" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Pawel\Desktop\KursJava\JavaFxEmailClient\src\com\barosanu\view\icons" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -58,25 +70,29 @@
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
     <state x="-985" y="193" key="FileChooserDialogImpl/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588696583632" />
-    <state width="1227" height="226" key="GridCell.Tab.0.bottom" timestamp="1588696669434">
+    <state width="1396" height="231" key="GridCell.Tab.0.bottom" timestamp="1588776866005">
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
-    <state width="1227" height="226" key="GridCell.Tab.0.bottom/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588696669434" />
-    <state width="1227" height="226" key="GridCell.Tab.0.center" timestamp="1588696669434">
+    <state width="1396" height="231" key="GridCell.Tab.0.bottom/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588776866004" />
+    <state width="1396" height="231" key="GridCell.Tab.0.center" timestamp="1588776866004">
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
-    <state width="1227" height="226" key="GridCell.Tab.0.center/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588696669434" />
-    <state width="1227" height="226" key="GridCell.Tab.0.left" timestamp="1588696669433">
+    <state width="1396" height="231" key="GridCell.Tab.0.center/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588776866004" />
+    <state width="1396" height="231" key="GridCell.Tab.0.left" timestamp="1588776866004">
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
-    <state width="1227" height="226" key="GridCell.Tab.0.left/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588696669433" />
-    <state width="1227" height="226" key="GridCell.Tab.0.right" timestamp="1588696669434">
+    <state width="1396" height="231" key="GridCell.Tab.0.left/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588776866004" />
+    <state width="1396" height="231" key="GridCell.Tab.0.right" timestamp="1588776866004">
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
-    <state width="1227" height="226" key="GridCell.Tab.0.right/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588696669434" />
+    <state width="1396" height="231" key="GridCell.Tab.0.right/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588776866004" />
     <state x="-1211" y="26" key="SettingsEditor" timestamp="1588696585889">
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
     <state x="-1211" y="26" key="SettingsEditor/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588696585889" />
+    <state x="-1076" y="127" key="com.intellij.ide.util.TipDialog" timestamp="1588776451587">
+      <screen x="-1440" y="0" width="1440" height="900" />
+    </state>
+    <state x="-1076" y="127" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588776451587" />
   </component>
 </project>
