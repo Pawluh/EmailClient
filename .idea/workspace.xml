@@ -25,6 +25,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="C:/Program Files/Java/javafx-sdk-11.0.2/javaMail/activation.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -64,11 +65,15 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-532" y="172" key="#com.intellij.ide.util.MemberChooser" timestamp="1588501833145">
+    <state x="-532" y="172" key="#com.intellij.ide.util.MemberChooser" timestamp="1588503244889">
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
-    <state x="-532" y="172" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588501833145" />
+    <state x="-532" y="172" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588503244889" />
     <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/-1440.0.1440.900@0.0.1366.728" timestamp="1587660242460" />
+    <state x="-919" y="262" width="407" height="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1588503179547">
+      <screen x="-1440" y="0" width="1440" height="900" />
+    </state>
+    <state x="-919" y="262" width="407" height="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588503179547" />
     <state x="-990" y="196" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588002279578">
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
@@ -78,25 +83,25 @@
     </state>
     <state x="-1030" y="129" key="FileChooserDialogImpl/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588425742872" />
     <state x="389" y="104" key="FileChooserDialogImpl/0.0.1366.728/-1440.0.1440.900@0.0.1366.728" timestamp="1587661680163" />
-    <state width="1227" height="125" key="GridCell.Tab.0.bottom" timestamp="1588501188957">
+    <state width="1227" height="125" key="GridCell.Tab.0.bottom" timestamp="1588503724249">
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
-    <state width="1227" height="125" key="GridCell.Tab.0.bottom/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588501188957" />
+    <state width="1227" height="125" key="GridCell.Tab.0.bottom/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588503724249" />
     <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728/-1440.0.1440.900@0.0.1366.728" timestamp="1587661778321" />
-    <state width="1227" height="125" key="GridCell.Tab.0.center" timestamp="1588501188956">
+    <state width="1227" height="125" key="GridCell.Tab.0.center" timestamp="1588503724249">
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
-    <state width="1227" height="125" key="GridCell.Tab.0.center/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588501188956" />
+    <state width="1227" height="125" key="GridCell.Tab.0.center/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588503724249" />
     <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728/-1440.0.1440.900@0.0.1366.728" timestamp="1587661778321" />
-    <state width="1227" height="125" key="GridCell.Tab.0.left" timestamp="1588501188956">
+    <state width="1227" height="125" key="GridCell.Tab.0.left" timestamp="1588503724249">
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
-    <state width="1227" height="125" key="GridCell.Tab.0.left/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588501188956" />
+    <state width="1227" height="125" key="GridCell.Tab.0.left/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588503724249" />
     <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728/-1440.0.1440.900@0.0.1366.728" timestamp="1587661778321" />
-    <state width="1227" height="125" key="GridCell.Tab.0.right" timestamp="1588501188956">
+    <state width="1227" height="125" key="GridCell.Tab.0.right" timestamp="1588503724249">
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
-    <state width="1227" height="125" key="GridCell.Tab.0.right/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588501188956" />
+    <state width="1227" height="125" key="GridCell.Tab.0.right/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588503724249" />
     <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728/-1440.0.1440.900@0.0.1366.728" timestamp="1587661778321" />
     <state width="1396" height="286" key="GridCell.Tab.1.bottom" timestamp="1588431043593">
       <screen x="-1440" y="0" width="1440" height="900" />
@@ -140,6 +145,10 @@
     </state>
     <state x="-1042" y="230" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588498925444" />
     <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1440.0.1440.900@0.0.1366.728" timestamp="1588002121454" />
+    <state x="-986" y="146" key="extract.method.dialog" timestamp="1588502845980">
+      <screen x="-1440" y="0" width="1440" height="900" />
+    </state>
+    <state x="-986" y="146" key="extract.method.dialog/0.0.1366.728/-1440.0.1440.900@-1440.0.1440.900" timestamp="1588502845980" />
     <state x="-978" y="77" key="refactoring.ChangeSignatureDialog" timestamp="1588434975306">
       <screen x="-1440" y="0" width="1440" height="900" />
     </state>
