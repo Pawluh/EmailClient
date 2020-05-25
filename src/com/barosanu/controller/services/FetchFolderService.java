@@ -38,11 +38,35 @@ public class FetchFolderService extends Service<Void> {
         for(Folder folder: folders){
             EmailTreeItem<String> emailTreeItem = new EmailTreeItem<String>(folder.getName());
             folderRoot.getChildren().add(emailTreeItem); //fetch main folders
-            folderRoot.setExpanded(true);// fetch all folders
+            folderRoot.setExpanded(true);
+            fetchMessagesonFolder(folder, emailTreeItem);
             if(folder.getType() == Folder.HOLDS_FOLDERS){// fetch all folders
                 Folder[] subFolders = folder.list();// fetch all folders
                 handleFolders(subFolders, emailTreeItem); // fetch all folders
             }
         }
+    }
+
+    private void fetchMessagesonFolder(Folder folder, EmailTreeItem<String> emailTreeItem) {
+        Service fetchMessagesService = new Service() {
+            @Override
+            protected Task createTask() {
+                return new Task() {
+                    @Override
+                    protected Object call() throws Exception {
+                        if(folder.getType() != Folder.HOLDS_FOLDERS){
+                            folder.open(Folder.READ_WRITE);
+                            int folderSize = folder.getMessageCount();
+                            for(int i = folderSize; i> 0; i--){
+                              //  System.out.println(folder.getMessage(i).getSubject());
+                                emailTreeItem.addEmail(folder.getMessage(i));
+                            }
+                        }
+                        return null;
+                    }
+                };
+            }
+        };
+        fetchMessagesService.start();
     }
 }
