@@ -7,15 +7,20 @@ import javafx.concurrent.Task;
 import javax.mail.Folder;
 import javax.mail.MessagingException;
 import javax.mail.Store;
+import javax.mail.event.MessageCountEvent;
+import javax.mail.event.MessageCountListener;
+import java.util.List;
 
 public class FetchFolderService extends Service<Void> {
 
     private Store store;
     private EmailTreeItem<String> folderRoot;
+    private List<Folder> folderList;
 
-    public FetchFolderService(Store store, EmailTreeItem<String> folderRoot) {
+    public FetchFolderService(Store store, EmailTreeItem<String> folderRoot, List<Folder> folderList) {
         this.store = store;
         this.folderRoot = folderRoot;
+        this.folderList = folderList;
     }
 
     @Override
@@ -36,15 +41,31 @@ public class FetchFolderService extends Service<Void> {
 
     private void handleFolders(Folder[] folders, EmailTreeItem<String> folderRoot) throws MessagingException {
         for(Folder folder: folders){
+            folderList.add(folder);
             EmailTreeItem<String> emailTreeItem = new EmailTreeItem<String>(folder.getName());
             folderRoot.getChildren().add(emailTreeItem); //fetch main folders
             folderRoot.setExpanded(true);
             fetchMessagesonFolder(folder, emailTreeItem);
+            addMessageListenerToFolder(folder, emailTreeItem);
             if(folder.getType() == Folder.HOLDS_FOLDERS){// fetch all folders
                 Folder[] subFolders = folder.list();// fetch all folders
                 handleFolders(subFolders, emailTreeItem); // fetch all folders
             }
         }
+    }
+
+    private void addMessageListenerToFolder(Folder folder, EmailTreeItem<String> emailTreeItem) {
+        folder.addMessageCountListener(new MessageCountListener() {
+            @Override
+            public void messagesAdded(MessageCountEvent messageCountEvent) {
+                System.out.println("message Added Event " + messageCountEvent);
+            }
+
+            @Override
+            public void messagesRemoved(MessageCountEvent messageCountEvent) {
+                System.out.println("message Remove Event " + messageCountEvent);
+            }
+        });
     }
 
     private void fetchMessagesonFolder(Folder folder, EmailTreeItem<String> emailTreeItem) {
